@@ -1,0 +1,207 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+body {
+
+    background-image: -webkit-gradient(radial, 50% 0%,100,50% 150%,100, from(#333333), to(#666666));
+    background-image: -webkit-radial-gradient(50% 100%, #666666, #333333);
+    background-image: -moz-radial-gradient(50% 100%, #666666, #333333);
+    background-image: -o-radial-gradient(50% 100%, #666666, #333333);
+    background-image: -ms-radial-gradient(50% 100%, #666666, #333333);
+    background-image: radial-gradient(50% 100%, #666666, #333333);
+
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-color: #dddddd;
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    padding: 0px;
+    height: 80px;
+    
+    z-index: 9999;
+
+    background : #464646;
+    background : -webkit-gradient(linear, left top, left bottom, from(rgb(168,168,168)), to(rgb(69,69,69)));
+    background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
+}
+
+.navigation {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.navigation ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.navigation .btn .menu {
+    display: none;
+}
+
+.navigation .btn:hover .menu {
+    display: block;
+}
+
+.navigation li a {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    background-color: none;
+}
+
+.navigation .logo {
+    float: left;
+}
+
+.navigation .logo a {
+    text-decoration: none;
+    color: #363636;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    /*padding: 10px 20px;*/
+}
+
+.navigation .btn-link {
+    float: right;
+    /*padding: 18px 30px;*/
+    padding-right: 30px;
+}
+
+.navigation .menu {
+    clear: both;
+}
+
+/*----- Adding back old menu css ----*/
+.menu {
+    
+    width: 100%;
+    border-left: 1px solid rgba(0,0,0,0.3);
+    border-right: 1px solid rgba(255,255,255,0.3);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #363636;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+ul.menu {
+    margin: 0;
+    padding: 0;
+}
+
+
+ul.menu li {
+    list-style: none;
+
+    height: 79px;
+    text-align: center;
+    background: -webkit-gradiant(radial, 50% 100%, 10, 50% 50%, 90, from(rgba(31,169,244,1)), to(rgba(0,28,78, 1)) );
+    background: -moz-radial-gradient(center 80px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);
+    }
+
+
+    ul.menu li a {
+    display: block;
+    padding: 0 20px;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+    line-height: 79px;
+    background : -webkit-gradient(linear, left top, left bottom, from(rgb(168,168,168)), to(rgb(69,69,69)));
+    background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
+    -webkit-transition-property: background;
+    -webkit-transition-duration: 2700ms;
+    -moz-transition-property: background;
+    -moz-transition-duration: 2700ms;
+    }
+
+/* this is for the small screen hover and active */
+ul.menu li a:hover, ul.menu li.active a  {
+        background: -webkit-gradient(radial, 50% 100%, 10, 50% 50%, 90, from(rgba(31,169,244,1)), to(rgba(0,28,78, 1)) );
+        background: -moz-radial-gradient(center 80px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);
+}
+
+@media (min-width: 768px) {
+    .navigation li {
+        float: left;
+    }
+    .navigation li a {
+        /*padding: 20px 30px;*/
+        padding-top: 30px;
+    }
+    .navigation .btn .menu {
+        display: block;
+    }
+    .navigation .btn-link {
+        display: none;
+    }
+
+    ul.menu {
+        margin: 0;
+        padding: 0;
+    }    
+
+    ul.menu li {
+        float:left;
+    }
+
+
+    ul.menu li a {
+        display: block;
+        padding: 0 20px;
+        border-left: 1px solid rgba(255,255,255,0.1);
+        border-right: 1px solid rgba(0,0,0,0.1);
+        text-align: center;
+        line-height: 79px;
+        background : -webkit-gradient(linear, left top, left bottom, from(rgb(168,168,168)), to(rgb(69,69,69)));
+        background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
+        -webkit-transition-property: background;
+        -webkit-transition-duration: 2700ms;
+        -moz-transition-property: background;
+        -moz-transition-duration: 2700ms;
+    }
+
+    /* this is for the large screen hover and active */
+    ul.menu li a:hover, ul.menu li.active a {
+        background: -webkit-gradient(radial, 50% 100%, 10, 50% 50%, 90, from(rgba(31,169,244,1)), to(rgba(0,28,78, 1)) );
+        background: -moz-radial-gradient(center 80px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);
+    }
+
+}

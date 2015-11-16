@@ -1,0 +1,391 @@
+/* Style sheet for images */
+
+@media only screen and (min-width: 1024px) {
+	img.creditcardspic {
+		float: left;
+
+		height: 150px;
+		width: 300px;
+		margin: 15px;
+
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+	}
+
+	img.gasstationpic {
+		float: right;
+
+		height: 125px;
+		width: 250px;
+		margin: 15px;
+
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+	}
+
+	img.restmerchacctpic {
+		float: left;
+
+		height: 150px;
+		width: 250px;
+		margin: 15px;
+
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);		
+	}
+
+	img.mobilepayphonepic {
+		float: left;
+
+		height: 230px;
+		width: 110px;
+		margin: 10px;
+	}
+
+	img.mobilepaylogospic {
+		float: right;
+
+		height: 150px;
+		width: 250px;
+		margin: 10px;
+		padding: 3px;
+		background-color: white;
+
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+	}
+
+	img.pinbaseddebitpic {
+		float: right;
+
+		height: 150px;
+		width: 350px;
+		margin: 10px;
+
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+
+		border-radius: 20px
+	}
+
+	img.womanaskingformoneypic {
+		float: left;
+
+		height: 200px;
+		width: 350px;
+		margin: 10px;	
+
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+	}
+
+	img.greedyhandspic {
+		float: right;
+
+		height: 260px;
+		width: 330px;
+		margin: 10px;
+		border-radius: 7px;	
+
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);		
+	}
+
+	img.manpullinghairoutpic {
+		float: right;
+
+		height: 180px;
+		width: 250px;
+		margin: 10px;		
+
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);		
+	}
+
+	img.paperondeskpic {
+		float: left;
+
+		height: 200px;
+		width: 350px;
+		margin: 10px;	
+
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);		
+	}
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+	img.creditcardspic {
+		float: left;
+
+		height: 100px;
+		width: 200px;
+		margin: 10px;
+
+		-webkit-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+	}
+
+	img.gasstationpic {
+		float: right;
+
+		height: 100px;
+		width: 175px;
+		margin: 5px;
+
+		-webkit-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);		
+	}
+
+	img.restmerchacctpic {
+		float: left;
+
+		height: 100px;
+		width: 150px;
+		margin: 10px;
+
+		-webkit-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);		
+	}
+
+	img.mobilepayphonepic {
+		float: left;
+
+		height: 180px;
+		width: 95px;
+		margin: 5px;
+	}
+
+	img.mobilepaylogospic {
+		float: right;
+
+		height: 100px;
+		width: 175px;
+		margin: 10px;
+		padding: 2px;
+		background-color: white;
+
+		-webkit-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+	}
+
+	img.pinbaseddebitpic {
+		float: right;
+
+		height: 100px;
+		width: 215px;
+		margin: 10px;
+
+		-webkit-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);		
+
+		border-radius: 20px
+	}
+
+	img.womanaskingformoneypic {
+		float: left;
+
+		height: 125px;
+		width: 220px;
+		margin: 7px;	
+
+		-webkit-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);		
+	}
+
+	img.greedyhandspic {
+		float: right;
+
+		height: 220px;
+		width: 300px;
+		margin: 7px;
+		border-radius: 7px;
+
+		-webkit-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);				
+	}
+
+	img.manpullinghairoutpic {
+		float: right;
+
+		height: 140px;
+		width: 200px;
+		margin: 7px;
+
+		-webkit-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);				
+	}
+
+	img.paperondeskpic {
+		float: left;
+
+		height: 150px;
+		width: 300px;
+		margin: 7px;	
+
+		-webkit-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);
+		box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.36);		
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	img.creditcardspic {
+		float: left;
+
+		height: 75px;
+		width: 150px;
+		margin: 7px;
+
+		-webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+	}
+
+	img.gasstationpic {
+		float: right;
+
+		height: 75px;
+		width: 125px;
+		margin: 7px;
+
+		-webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+	}
+
+	img.restmerchacctpic {
+		float: left;
+
+		height: 150px;
+		width: 250px;
+		margin: 7px;
+
+		-webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);		
+	}
+
+	img.mobilepayphonepic {
+		float: left;
+
+		height: 120px;
+		width: 60px;
+		margin: 5px;
+	}
+
+	img.mobilepaylogospic {
+		float: right;
+
+		height: 75px;
+		width: 140px;
+		margin: 7px;
+		padding: 1px;
+		background-color: white;
+
+		-webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);		
+	}
+
+	img.pinbaseddebitpic {
+		float: right;
+
+		height: 75px;
+		width: 125px;
+		margin: 7px;
+
+		-webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+
+		border-radius: 20px		
+	}
+
+	img.womanaskingformoneypic {
+		float: left;
+
+		height: 90px;
+		width: 175px;
+		margin: 4px;
+
+		-webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);			
+	}
+
+	img.greedyhandspic {
+		float: right;
+
+		height: 150px;
+		width: 225px;
+		margin: 4px;
+		border-radius: 7px;
+
+		-webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);		
+	}
+
+	img.manpullinghairoutpic {
+		float: right;
+
+		height: 110px;
+		width: 160px;
+		margin: 5px;
+
+		-webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);				
+	}
+
+	img.paperondeskpic {
+		float: left;
+
+		height: 150px;
+		width: 300px;
+		margin: 7px;
+
+		-webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		-moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);
+		box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.36);		
+	}
+}
+
+.messydeskpic {
+  display: block;
+  padding: 50px;
+  position: relative;
+}
+
+.messydeskpic::after {
+  content: "";
+  background: url('../images/messy-desk-big-pile.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+  opacity: 0.05;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  horizontal-align: center;
+  z-index: -1;   
+}
