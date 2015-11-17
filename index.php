@@ -39,7 +39,7 @@
       lot of grief and I was not getting paid back 100% but I feel bad for the people asking to borrow money
       and am a gigantic sucker...</p>
       <p class="clear">&nbsp;</p>
-      <img src="./images/woman-asking-for-money.jpg" alt="Woman Asking for Money" class="womanaskingformoneypic">
+      <img src="./images/woman-asking-for-money-pre.jpg" alt="Woman Asking for Money" class="womanaskingformoneypic">
       <p>Any sob story you tell me can extract any amount of money from me...</p>
       <p><em>"I am trying to pay my way through my web development class and cannot afford to pay rent now..."</em></p>
       <p><em>"I cannot pay you rent because I forgot about my
@@ -78,11 +78,6 @@
       </div>
     </div>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        console.log("Document Loaded");
-        $('.paperondeskpic').fadeOut(5000).fadeIn(5000);
-      }); // end ready
-      </script>
+    <script src="./js/payment_app.js"></script>
 </body>
 </html>
