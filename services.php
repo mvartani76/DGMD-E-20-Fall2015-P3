@@ -63,7 +63,9 @@
       <p>With my NEW Mobile Pay you can save money by downloading my app found in the Apple Store or Google Marketplace so you can utilize your smart phone or wireless device to run transactions.</P>
 
       <img src="./images/mobile-payment-logos.png" class="mobilepaylogospic">
-        <p>I support the following wireless payment options: Apple Pay, Square, Intuit Go, Venmo, PayPal, Google Wallet, SnapCash, Popmoney, and more.</p>
+        <p>I support the following wireless payment options: Apple Pay, Square, Intuit Go, Venmo, PayPal,
+          Google Wallet, SnapCash, Popmoney, <span id="lesspaymentoptions"> Dwolla, TabbedOut, Zong, Stripe,
+          mopay, obopay, PayOne, cellum, and mPass (less).</span><span id="morepaymentoptions">and more.</span></p>
         <p>If you do not see your preferred wireless payment option, please contact me
         directly and I will see what I can do to get it up and running as quickly as possible.</p>
       <p class="clear">&nbsp;</p>
@@ -86,5 +88,7 @@
 
         <p><strong>Real-time Payment Manager (RPM) –</strong> The Virtual Terminal works as base access point for the gateway solution. Its back-office web product allows you to easily look up transaction activity, service your consumers and reconcile your online store. Functionalities include detailed reporting, transaction dashboard, online virtual point-of-sale terminal, transaction history search, recurring payment plans, user administration and more.</P>
     </article>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="./js/payment_app.js"></script>    
 </body>
 </html>
