@@ -40,13 +40,15 @@
       and am a gigantic sucker...</p>
       <p class="clear">&nbsp;</p>
       <img src="./images/woman-asking-for-money-pre.jpg" alt="Woman Asking for Money" class="womanaskingformoneypic">
-      <p>Any sob story you tell me can extract any amount of money from me...</p>
-      <p><em>"I am trying to pay my way through my web development class and cannot afford to pay rent now..."</em></p>
-      <p><em>"I cannot pay you rent because I forgot about my
+      <span id="sobstoryquotes">
+        <p>Any sob story you tell me can extract any amount of money from me...</p>
+        <p><em>"I am trying to pay my way through my web development class and cannot afford to pay rent now..."</em></p>
+        <p><em>"I cannot pay you rent because I forgot about my
         insurance payment..."</em></p>
-      <p><em>"I will get you your money next week..."</em></p>
-      <p><em>"I thought you didn't need the money until next week?"</em></p>
-      <p><em>"Wait a second... I thought I only owed you two thousand bucks?"</em></p>
+        <p><em>"I will get you your money next week..."</em></p>
+        <p><em>"I thought you didn't need the money until next week?"</em></p>
+        <p><em>"Wait a second... I thought I only owed you two thousand bucks?"</em></p>
+      </span>
       <p>I have tried to work on this but have not been able
       to correct this non-productive behavior of mine...</p>
       <p class="clear">&nbsp;</p>
@@ -77,6 +79,7 @@
           <p>Well if you owe me money, you have to use this...:) If you want to borrow money from me, you have to use this...:)
       </div>
     </div>
+
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="./js/payment_app.js"></script>
 </body>

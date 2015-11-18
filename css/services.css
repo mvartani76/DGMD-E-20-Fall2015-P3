@@ -23,7 +23,7 @@ article {
 	font-size: 40px;
 	font-family: 'Montserrat', sans-serif;
 }
-h2.servicesh2lighterblue {
+h2.servicesh2lighterblue, #justmorepaymentoptions, #justlesspaymentoptions {
 	color: #0c9eed;
 }
 

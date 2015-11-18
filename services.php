@@ -65,7 +65,7 @@
       <img src="./images/mobile-payment-logos.png" class="mobilepaylogospic">
         <p>I support the following wireless payment options: Apple Pay, Square, Intuit Go, Venmo, PayPal,
           Google Wallet, SnapCash, Popmoney, <span id="lesspaymentoptions"> Dwolla, TabbedOut, Zong, Stripe,
-          mopay, obopay, PayOne, cellum, and mPass (less).</span><span id="morepaymentoptions">and more.</span></p>
+          mopay, obopay, PayOne, cellum, and mPass <span id="justlesspaymentoptions">(less).</span></span><span id="morepaymentoptions">and <span id="justmorepaymentoptions">more.</span></span></p>
         <p>If you do not see your preferred wireless payment option, please contact me
         directly and I will see what I can do to get it up and running as quickly as possible.</p>
       <p class="clear">&nbsp;</p>
