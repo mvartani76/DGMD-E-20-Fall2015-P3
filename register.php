@@ -5,7 +5,6 @@
   <link href="./css/menu.css" rel="stylesheet">
   <link href="./css/formstyle.css" rel="stylesheet">
   <link href="./css/services.css" rel="stylesheet">
-  <link href="./css/footer.css" rel="stylesheet">  
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>  
 </head>
 <body>
@@ -41,12 +40,13 @@
       <fieldset><input placeholder="Country" id="country" name="country" type="text" tabindex="8" required></fieldset>
     </div>
     <div class="form50">
-      <fieldset><input placeholder="Your Email Address" id="emailaddr" name="emailaddr" type="email" tabindex="9" required></fieldset>
-      <fieldset><input placeholder="Your Phone Number" id="phonenumber" name="phonenumber" type="tel" tabindex="10" required></fieldset>
-      <fieldset><input placeholder="Your Web Site starts with http://" id="weburl" name="weburl" type="url" tabindex="11"></fieldset>
-      <fieldset><input placeholder="Desired Username" id="username" name="username" type="text" tabindex="12"></fieldset>
-      <fieldset><input placeholder="Password" id="userpassword" name="userpassword" type="password" tabindex="13"></fieldset>
-      <fieldset><input placeholder="Confirm Password" id="confirmuserpassword" name="confirmuserpassword" type="password" tabindex="13"></fieldset>
+      <fieldset><input placeholder="Your Email Address (minimum of 5 characters)" id="emailaddr" name="emailaddr" type="email" tabindex="9" required></fieldset>
+      <fieldset><input placeholder="Confirm Email Address" id="confirmemailaddr" name="confirmemailaddr" type="email" tabindex="10" required></fieldset>
+      <fieldset><input placeholder="Your Phone Number" id="phonenumber" name="phonenumber" type="tel" tabindex="11" required></fieldset>
+      <fieldset><input placeholder="Your Web Site starts with http://" id="weburl" name="weburl" type="url" tabindex="12"></fieldset>
+      <fieldset><input placeholder="Desired Username" id="username" name="username" type="text" tabindex="13"></fieldset>
+      <fieldset><input placeholder="Password" id="userpassword" name="userpassword" type="password" tabindex="14"></fieldset>
+      <fieldset><input placeholder="Confirm Password" id="confirmuserpassword" name="confirmuserpassword" type="password" tabindex="15"></fieldset>
     </div>
     <fieldset>
       <button name="submit" type="submit" id="register-submit" data-submit="...Sending">Submit</button>
@@ -54,5 +54,8 @@
   </form>
 
 </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="./js/payment_app.js"></script>  
 </body>
 </html>

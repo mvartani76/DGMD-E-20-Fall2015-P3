@@ -163,6 +163,12 @@ fieldset {
     margin-right: 2%;
 }
 
+#firstname.error {
+	border-style: solid;
+    border-width: 15px;
+	border-color: red;
+	color: red;
+}
 
 ::-webkit-input-placeholder {
  color:#888;
