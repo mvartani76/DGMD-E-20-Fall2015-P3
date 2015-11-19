@@ -163,11 +163,12 @@ fieldset {
     margin-right: 2%;
 }
 
-#firstname.error {
-	border-style: solid;
-    border-width: 15px;
-	border-color: red;
-	color: red;
+.error {
+	color: white;
+	background-color: red;
+	width: 100%;
+	min-width: 100%;
+	font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 ::-webkit-input-placeholder {

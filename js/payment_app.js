@@ -112,7 +112,6 @@ $(document).ready(function(){
 		}
 	}); // end zip_post_code focusout
 
-
 	$('#country').focusout(function(event){
 		if ($('#country').val().length == 0) {
 			$('#country').css('background-color', '#0c9eed');
@@ -121,7 +120,6 @@ $(document).ready(function(){
 			$('#country').css('background-color', '#fff');
 		}
 	}); // end country focusout
-
 
 	$('#emailaddr').focusout(function(event){
 		if ($('#emailaddr').val().length == 0) {
@@ -194,5 +192,113 @@ $(document).ready(function(){
 		}
 	}); // end userpassword focusout
 
+	// Flag errors when button is depressed
+	$('button').click(function(submit){
+		$('#firstname + .error').html(' ');
+		$('#lastname + .error').html(' ');
+		$('#streetaddr1 + .error').html(' ');
+		$('#city + .error').html(' ');
+		$('#state_prov + .error').html(' ');
+		$('#zip_post_code + .error').html(' ');
+		$('#country + .error').html(' ');
+		$('#emailaddr + .error').html(' ');
+		$('#confirmemailaddr + .error').html(' ');
+		$('#phonenumber + .error').html(' ');
+		$('#username + .error').html(' ');
+		$('#userpassword + .error').html(' ');
+		$('#confirmuserpassword + .error').html(' ');
+
+		if ($('#firstname').val().length == 0) {
+			$('#firstname + .error').html('Please enter your first name...');
+			submit.preventDefault();
+		} else {
+			$('#firstname + .error').html(' ');
+		}
+
+		if ($('#lastname').val().length == 0) {
+			$('#lastname + .error').html('Please enter your last name...');
+			submit.preventDefault();
+		} else {
+			$('#lastname + .error').html(' ');
+		}
+
+		if ($('#streetaddr1').val().length == 0) {
+			$('#streetaddr1 + .error').html('Please enter the street address...');
+			submit.preventDefault();
+		} else {
+			$('#streetaddr1 + .error').html(' ');
+		}
+
+		if ($('#city').val().length == 0) {
+			$('#city + .error').html('Please enter the city...');
+			submit.preventDefault();
+		} else {
+			$('#city + .error').html(' ');
+		}
+
+		if ($('#state_prov').val().length == 0) {
+			$('#state_prov + .error').html('Please enter state/province...');
+			submit.preventDefault();
+		} else {
+			$('#state_prov + .error').html(' ');
+		}
+
+		if ($('#zip_post_code').val().length == 0) {
+			$('#zip_post_code + .error').html('Please enter the zip/post code...');
+			submit.preventDefault();
+		} else {
+			$('#zip_post_code + .error').html(' ');
+		}
+
+		if ($('#country').val().length == 0) {
+			$('#country + .error').html('Please enter the country...');
+			submit.preventDefault();
+		} else {
+			$('#country + .error').html(' ');
+		}
+
+		if ($('#emailaddr').val().length == 0) {
+			$('#emailaddr + .error').html('Please enter an email address...');
+			submit.preventDefault();
+		} else {
+			$('#emailaddr + .error').html(' ');
+		}
+
+		if ($('#phonenumber').val().length == 0) {
+			$('#phonenumber + .error').html('Please enter your phone number...');
+			submit.preventDefault();
+		} else {
+			$('#phonenumber + .error').html(' ');
+		}
+
+		if ($('#username').val().length == 0) {
+			$('#username + .error').html('Please enter a username...');
+			submit.preventDefault();
+		} else {
+			$('#username + .error').html(' ');
+		}
+
+		if ($('#userpassword').val().length == 0) {
+			$('#userpassword + .error').html('Please enter a user password...');
+			submit.preventDefault();
+		} else {
+			$('#userpassword + .error').html(' ');
+		}
+
+		if ($('#emailaddr').val() != $('#confirmemailaddr').val()) {
+			$('#confirmemailaddr + .error').html('Email addresses do not match...');
+			submit.preventDefault();
+		} else {
+			$('#confirmemailaddr + .error').html(' ');
+		}
+
+		if ($('#userpassword').val() != $('#confirmuserpassword').val()) {
+			$('#confirmuserpassword + .error').html('Passwords do not match...');
+			submit.preventDefault();
+		} else {
+			$('#confirmuserpassword + .error').html(' ');
+		}
+
+	}); // end flag errors when button is depressed
       
 }); // end ready
