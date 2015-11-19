@@ -20,8 +20,30 @@ article {
 	width: 100%;
 	top: 70px;
 	padding: 7px;
-	font-size: 40px;
+	font-size: 48px;
 	font-family: 'Montserrat', sans-serif;
+
+    color: white;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+  }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from {color: white;}
+    to {color: blue;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {color: white;}
+    to {color: blue;}
+}
+
 }
 h2.servicesh2lighterblue, #justmorepaymentoptions, #justlesspaymentoptions {
 	color: #0c9eed;
