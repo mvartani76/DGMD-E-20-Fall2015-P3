@@ -16,6 +16,7 @@
               <ul class="menu">
                 <li><a href="./index.php">Home</a></li>
                 <li class="active"><a href="./services.php">Services</a></li>
+                <li><a href="./createcard.php">Create Card</a></li>
                 <li><a href="./login.php">Login</a></li>
                 <li><a href="./register.php">Register</a></li>
                 <li><a href="./contact.php">Contact</a></li>
