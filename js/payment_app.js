@@ -309,18 +309,12 @@ $(document).ready(function(){
 	$('.logincontainer').fadeIn(3000);
 
 // Part 2 jCanvas
+	// Part 2 draw >=2 elements on canvas when button clicked
 	$('#createcard_id-create').click(function(){
-		var imgsrcprop;
 		var imgsrc = $('#card_image').val();
-		var canvaswidth = $('#canvas1').width();
-		var canvasheight = $('#canvas1').height();
-		var imgscl = $('#card_image_scale').val()/100;
-		
-		var cclogolocx = canvaswidth-60;
-		var cclogolocy = canvaswidth-25;
-
-		var firstname = $('#card_firstname').val().toUpperCase();
-		var lastname = $('#card_lastname').val().toUpperCase();
+		var rgb_r = $('#card_image_rgb_red').val();
+		var rgb_g = $('#card_image_rgb_green').val();
+		var rgb_b = $('#card_image_rgb_blue').val();
 
 		switch(imgsrc){
 			case 'nature':
@@ -414,10 +408,26 @@ $(document).ready(function(){
   			source: imgsrc,
   			x:0,
   			y:0,
+  			index: 0,
   			fromCenter: false,
   			load: insertCClogo
-		});
+		})
+		.drawLayers();
 		
+		// Part 2 form element input
+		// this portion of jCanvas displays the first and last name of the user
+		// at the bottom of the credit card picture using text input fields
+
+		// normally I would declare all variables at the top but this appears to work
+		// and I think it would be easier to locate the code to load the input all in
+		// one place...
+
+		// I also use a select form in createcard.php to select the background image
+		// used for the credit card skin but since it uses a function and is interspersed
+		// with other code, I just show this one as it is all in one easy place to see... 
+		var firstname = $('#card_firstname').val().toUpperCase();
+		var lastname = $('#card_lastname').val().toUpperCase();
+
 		$('canvas').drawText({
 			layer: true,
 			fillStyle: '#fff',
@@ -427,17 +437,87 @@ $(document).ready(function(){
 			y: 125,
 			fromCenter: false,
 			fontSize: 16,
+			index: 3,
 			fontFamily: 'Trebuchet MS, sans-serif',
 			text: firstname + ' ' + lastname
 		})
 		.drawLayers();
+		// End of Part 2 form element input
+
+		function setColor() {
+  			$(this).setPixels({
+	    		x: 260, y: 30,
+	    		width: 60, height: 40,
+	    		// loop through each pixel
+	    		each: function(px) {
+	      			px.r = rgb_r;
+	      			px.g = rgb_g;
+	      			px.b = rgb_b;
+	    		}
+  			});
+		}
+
+		// Part 2 Chaining method
+		// Draw a very simple abstract bank logo
+		// This chains a rectangle drawing with an ellipse drawing
+		$('canvas').drawRect({
+			layer: true,
+			index: 1,
+  			fillStyle: '#CCC',
+  			x: 260, y: 30,
+  			fromCenter: true,
+  			width: 50,
+  			height: 30
+		})
+		.drawEllipse({
+			layer: true,
+			index: 2,
+  			strokeStyle: '#36c',
+  			strokeWidth: 1,
+  			x: 260, y: 30,
+  			fromCenter: true,
+  			width: 40, height: 20
+		})
+		.drawLayers();
+		// End of Part 2 Chaining method
+
+		$('canvas').drawImage({
+  			layer: true,
+  			source: "images/mike_small_head4.jpg",
+  			x:10,
+  			y:10,
+  			index: 1,
+  			fromCenter: false,
+  			load: setColor
+		})
+		.drawLayers();	
 
 		event.preventDefault();
 	}); //end click
+	// End of Part 2 Draw >= 2 elements when button clicked
 
+	// Part 2 Clear Canvas
 	$('#createcard_id-clear').click(function(){
 		$('canvas').clearCanvas();
 	}); //end click-clear
+	// End of Part 2 Clear Canvas
 
+	$('#card_firstname').focusout(function(event){
+		if ($('#card_firstname').val().length == 0) {
+			$('#card_firstname').css('background-color', '#0c9eed');
+			event.preventDefault();
+		} else {
+			$('#card_firstname').css('background-color', '#fff');
+		}
+	}); // end card_firstname focusout
+
+	$('#card_lastname').focusout(function(event){
+		if ($('#card_lastname').val().length == 0) {
+			$('#card_lastname').css('background-color', '#0c9eed');
+			event.preventDefault();
+		} else {
+			$('#card_lastname').css('background-color', '#fff');
+		}
+	}); // end card_firstname focusout
 
 }); // end ready

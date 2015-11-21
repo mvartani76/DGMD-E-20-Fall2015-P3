@@ -139,6 +139,13 @@ fieldset {
 	border:1px solid #AAA;
 }
 
+#createcard_id input[type="text"]:hover, #createcard_id input[type="password"]:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
 #contact_id textarea, #login_id textarea {
 	height:100px;
 	max-width:100%;

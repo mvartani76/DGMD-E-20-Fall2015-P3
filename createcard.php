@@ -40,12 +40,20 @@
             <option value="skyline">City Skyline</option>
           </select>
         </fieldset>
-        <fieldset><input placeholder="First Name" id="card_firstname" name="firstname" type="text"></fieldset>
-        <fieldset><input placeholder="Last Name" id="card_lastname" name="lastname" type="text"></fieldset>
+        <fieldset><input placeholder="First Name" id="card_firstname" name="firstname" type="text" required></fieldset>
+        <fieldset><input placeholder="Last Name" id="card_lastname" name="lastname" type="text" required></fieldset>
         <fieldset>
-          <input type="range" min="1" max="100" name="scale" id="card_image_scale">
+          <label>Bank Logo Color (Red) </label>
+          <input type="range" min="0" max="255" name="scale" id="card_image_rgb_red">
         </fieldset>
-
+        <fieldset>
+          <label>Bank Logo Color (Green) </label>
+          <input type="range" min="0" max="255" name="scale" id="card_image_rgb_green">
+        </fieldset>
+        <fieldset>
+          <label>Bank Logo Color (Blue) </label>
+          <input type="range" min="0" max="255" name="scale" id="card_image_rgb_blue">
+        </fieldset>        
     		<fieldset>
       		<button type="submit" id="createcard_id-create">Create Card</button>
     		</fieldset>
