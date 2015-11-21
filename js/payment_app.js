@@ -1,11 +1,7 @@
 $(document).ready(function(){
 	console.log("Document Loaded");
 
-
-	
-	$('.paperondeskpic').fadeOut(5000).fadeIn(5000);
-
-	// This is my Part 1 Click Effect Code Section
+	// This is my Part 1 Click Effect Code Section -- this is demonstrated in services.php
 	
 	// Initially hide the additional mobile payment companies
 	$('#lesspaymentoptions').hide();
@@ -18,7 +14,7 @@ $(document).ready(function(){
         $('.mobilepaylogospic').attr({
 			'src': './images/mobile-payment-logos-expanded.png'
 		});
-    });
+    }); // End Click Effect that changes text and shows a different graphic
 
     // When clicked, it will revert back to the original text and graphic
     $('#lesspaymentoptions').click(function(){
@@ -29,11 +25,10 @@ $(document).ready(function(){
         $('.mobilepaylogospic').attr({
 			'src': './images/mobile-payment-logos.png'
 		});
-    });
+    }); // End Click Effect that reverts back to original text and graphic
     // End of Part 1 Click Effect Code Section
-
-          
-	// This is my Part 1 Hover Effect Code section
+         
+	// This is my Part 1 Hover Effect Code section - this is demonstrated in index.php
 	$('.womanaskingformoneypic').hover(function(){
 		$('.womanaskingformoneypic').attr({
 			'src': './images/woman-asking-for-money.jpg'
@@ -53,7 +48,7 @@ $(document).ready(function(){
 		// Do not need any filtering for the exit hover as all of the p text will be white
 		$('#sobstoryquotes p').css('color', 'white' );
 	}); // end hover over woman asking for money pictures
-
+	// End of Part 1 Click Effect Code Section
 
 
 	// form if/else validation
@@ -193,7 +188,7 @@ $(document).ready(function(){
 	}); // end userpassword focusout
 
 	// Flag errors when button is depressed
-	$('button').click(function(submit){
+	$('button#register-submit').click(function(submit){
 		$('#firstname + .error').html(' ');
 		$('#lastname + .error').html(' ');
 		$('#streetaddr1 + .error').html(' ');
@@ -300,5 +295,149 @@ $(document).ready(function(){
 		}
 
 	}); // end flag errors when button is depressed
-      
+
+	$('.paperondeskpic').fadeOut(5000).fadeIn(5000);
+	$('.servicestitle').animate({
+		left: '70%',
+		fontSize: '+=2em',}, 3000);
+	$('.servicestitle').animate({
+		left: '0%',
+		fontSize: '-=2em',}, 3000);
+
+	// FadeIn effect used in login.php
+	$('.logincontainer').hide();
+	$('.logincontainer').fadeIn(3000);
+
+// Part 2 jCanvas
+	$('#createcard_id-create').click(function(){
+		var imgsrcprop;
+		var imgsrc = $('#card_image').val();
+		var canvaswidth = $('#canvas1').width();
+		var canvasheight = $('#canvas1').height();
+		var imgscl = $('#card_image_scale').val()/100;
+		
+		var cclogolocx = canvaswidth-60;
+		var cclogolocy = canvaswidth-25;
+
+		var firstname = $('#card_firstname').val().toUpperCase();
+		var lastname = $('#card_lastname').val().toUpperCase();
+
+		switch(imgsrc){
+			case 'nature':
+				imgsrc="images/nature-scene-1-width450.jpg";
+				break;
+			case 'sports':
+				imgsrc="images/michigan-football-1-width450.jpg";
+				break;
+			case 'automotive':
+				imgsrc="images/corvette-stingray-2016-1-width450.jpg";
+				break;
+			default:
+				imgsrc="images/nyc-cityscape-1-width450.jpg";
+		} //end switch
+
+		// function that inserts different credit card logos in the four canvases
+		function insertCClogo() {
+  			$('#canvas1').drawImage({
+  				x: 260,
+  				y: 125,
+    			source: "images/visa-logo-width60.jpg"
+  			})
+  			.drawText({
+				fillStyle: '#fff',
+				strokeStyle: '#000',
+				strokeWidth: 1,
+				x: 25,
+				y: 80,
+				fromCenter: false,
+				fontSize: 24,
+				fontFamily: 'Trebuchet MS, sans-serif',
+				text: '4269 5678 9012 3456'
+			});
+
+  			$('#canvas2').drawImage({
+  				x: 260,
+  				y: 125,
+    			source: "images/mc-logo-width60.jpg"
+  			})
+  			.drawText({
+				fillStyle: '#fff',
+				strokeStyle: '#000',
+				strokeWidth: 1,
+				x: 25,
+				y: 80,
+				fromCenter: false,
+				fontSize: 24,
+				fontFamily: 'Trebuchet MS, sans-serif',
+				text: '5156 5678 9012 3456'
+			});
+
+  			$('#canvas3').drawImage({
+  				x: 260,
+  				y: 125,
+    			source: "images/amex-logo-width60.jpg"
+  			})
+  			.drawText({
+				fillStyle: '#fff',
+				strokeStyle: '#000',
+				strokeWidth: 1,
+				x: 25,
+				y: 80,
+				fromCenter: false,
+				fontSize: 24,
+				fontFamily: 'Trebuchet MS, sans-serif',
+				text: '3772 5678 9012 3456'
+			});
+
+  			$('#canvas4').drawImage({
+  				x: 260,
+  				y: 125,
+    			source: "images/discover-logo-width60.jpg"
+  			})
+  			.drawText({
+				fillStyle: '#fff',
+				strokeStyle: '#000',
+				strokeWidth: 1,
+				x: 25,
+				y: 80,
+				fromCenter: false,
+				fontSize: 24,
+				fontFamily: 'Trebuchet MS, sans-serif',
+				text: '6011 5678 9012 3456'
+			}); 			
+		}
+
+		// draw the same image background in the four canvases
+		// load an additional image 
+		$('canvas').drawImage({
+  			layer: true,
+  			source: imgsrc,
+  			x:0,
+  			y:0,
+  			fromCenter: false,
+  			load: insertCClogo
+		});
+		
+		$('canvas').drawText({
+			layer: true,
+			fillStyle: '#fff',
+			strokeStyle: '#000',
+			strokeWidth: 1,
+			x: 20,
+			y: 125,
+			fromCenter: false,
+			fontSize: 16,
+			fontFamily: 'Trebuchet MS, sans-serif',
+			text: firstname + ' ' + lastname
+		})
+		.drawLayers();
+
+		event.preventDefault();
+	}); //end click
+
+	$('#createcard_id-clear').click(function(){
+		$('canvas').clearCanvas();
+	}); //end click-clear
+
+
 }); // end ready

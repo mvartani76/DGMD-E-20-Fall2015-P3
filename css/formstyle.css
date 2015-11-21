@@ -14,11 +14,11 @@
 	top: 65px;
 }
 
-.contactcontainer {
+.contactcontainer, .createcardcontainer {
 	top: 35px;
 }
 
-.logincontainer, .createcardcontainer {
+.logincontainer {
 	top: 140px;
 }
 
